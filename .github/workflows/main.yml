@@ -1,0 +1,31 @@
+name: Run Python script
+
+on:
+  push:
+    branches:
+      - master  # Or the branch that you want to run this action on
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install google-cloud-storage
+
+    - name: Run Python script
+      env:
+        GOOGLE_APPLICATION_CREDENTIALS_DATA: ${{ secrets.GCP_SA_KEY }}
+      run: |
+        echo "$GOOGLE_APPLICATION_CREDENTIALS_DATA" > key.json
+        export GOOGLE_APPLICATION_CREDENTIALS=key.json
+        python your_python_script.py  # Replace with your python script name
