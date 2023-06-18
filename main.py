@@ -52,5 +52,14 @@ for folder_name in os.listdir(image_directory):
                 # 데이터 추가
                 data.append([folder_name, url])
 
-# CSV 파일 작성
+def upload_csv_to_gcs(bucket_name, local_file_path, remote_file_name):
+    storage_client = storage.Client()
+    bucket = storage_client.get_bucket(bucket_name)
+    blob = bucket.blob(remote_file_name)
+    blob.upload_from_filename(local_file_path)
+    print(f"CSV 파일이 성공적으로 업로드되었습니다: gs://{bucket_name}/{remote_file_name}")
+
+
+# CSV 파일 작성 후 업로드
 write_csv_file(csv_file_path, data)
+upload_csv_to_gcs(bucket_name, csv_file_path, 'result.csv')
