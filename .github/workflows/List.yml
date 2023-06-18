@@ -20,7 +20,7 @@ jobs:
 
     - name: List bucket files and their public URLs
       run: |
-        BUCKET_NAME="artbridge-bucket"  # Replace with your bucket name
+        BUCKET_NAME=artbridge-bucket  # Replace with your bucket name
 
         # Authenticate with GCP
         echo ${{ secrets.GCP_SA_KEY }} | base64 --decode > ${HOME}/gcp-key.json
