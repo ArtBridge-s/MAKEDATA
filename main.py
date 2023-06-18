@@ -1,7 +1,12 @@
 import os
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud-storage-key.json'
-
 from google.cloud import storage
+
+# Specify the path to the service account key file
+key_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'google-cloud-storage-key.json')
+
+# Initialize the storage client with the service account key
+storage_client = storage.Client.from_service_account_json(key_path)
+
 import csv
 import uuid
 
