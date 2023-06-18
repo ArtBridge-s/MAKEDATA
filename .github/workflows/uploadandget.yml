@@ -1,9 +1,7 @@
 name: Upload to GCS and Generate CSV
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   upload-to-gcs-and-generate-csv:
