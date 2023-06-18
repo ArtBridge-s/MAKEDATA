@@ -1,6 +1,5 @@
 import os
-key_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'google-cloud-storage-key.json')
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = key_path
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/path/to/google-cloud-storage-key.json'
 from google.cloud import storage
 import csv
 import uuid
