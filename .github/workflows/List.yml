@@ -1,0 +1,36 @@
+name: List GCS bucket files
+
+on:
+  workflow_dispatch:
+
+jobs:
+  list-gcs-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@v0.2.1
+      with:
+        project_id: ${{ secrets.GCP_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+
+    - name: List bucket files and their public URLs
+      run: |
+        BUCKET_NAME="your-bucket-name"  # Replace with your bucket name
+
+        # Authenticate with GCP
+        echo ${{ secrets.GCP_SA_KEY }} | base64 --decode > ${HOME}/gcp-key.json
+        gcloud auth activate-service-account --key-file=${HOME}/gcp-key.json
+
+        # List bucket files
+        FILES=$(gsutil ls gs://${BUCKET_NAME})
+
+        # Print public access URLs for each file
+        for FILE in $FILES; do
+          PUBLIC_URL="https://storage.googleapis.com/${FILE}"
+          echo $PUBLIC_URL
+        done
