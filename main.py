@@ -1,5 +1,6 @@
 import os
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/path/to/google-cloud-storage-key.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud-storage-key.json'
+
 from google.cloud import storage
 import csv
 import uuid
