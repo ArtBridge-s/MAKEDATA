@@ -1,1 +1,1 @@
-[![Upload to GCS and Generate CSV](https://github.com/ArtBridge-s/GCS/actions/workflows/uploadandget.yml/badge.svg?event=workflow_dispatch)](https://github.com/ArtBridge-s/GCS/actions/workflows/uploadandget.yml)
+[![Run Python script](https://github.com/ArtBridge-s/GCS/actions/workflows/main.yml/badge.svg)](https://github.com/ArtBridge-s/GCS/actions/workflows/main.yml)
