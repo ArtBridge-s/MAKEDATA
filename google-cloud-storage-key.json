@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "artbridge",
+  "private_key_id": "db2ed78bebbab4e08b7e45a466127cbb82827527",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwN2XvCZpNOnxm\nsXJ9rPaFaIH4cVncnp0zYJrTDxEyEWWaKXVZ7ZZ9uGZJeH4pkL7vXiDS/2zPcdQA\n1pOlO4tEIWl0as/hreEc4zvyfmTYDzunXZpoSe4gMp5iEFy/du3uoWna4MW3bD5I\n3Ve3DBmGU85fSjcmvHQOpHRi/9CLA2eIFyqKgRW+Jg+1j8gHj85mHGDUpY+dbXEF\n9XZ19Xy02oP0EprVHKyGNCoJlJWoOeE0380vG+2MprARQH3nyt+YJ81jY0oIwhsr\nEIP14LQLrp5vJCg1ScHlQSOBwv3p3TOdzE9Ec/rp83cvfsv4aZiwO/bmI1MKmPC2\nwBId17XlAgMBAAECggEANHMAvZHDohn23hAR7lM1ewbcrIh8gTyauKiX3Js++IKS\nFb0iRzZ+1QO2OkcJcjC5jACdz3+kMOiF/AviHUuoS4qQW0zRfDAncVQ3SxmQxXhf\nPpUPONxMarv2RWTuXjS1ZBIaMkI1xz8KGOD80yhgTomSQu2Rlc+A0bzkQXU36rAE\nxWr18xTnRF2o7ElsGiWEN1NbyRs3OHC3nnA9aF80/KpButm9KYpKoXLIJWIZZH1r\nWVl+y0vrwY9FfsJLiKN3hkT+og0zsqsmjiJFTFDJk8W9sN4Tow+QzRhraXvNM5ck\nFA9HhURl4+A0n6RUbQ06OWSGkjoQkoLj+fM/pdrgjwKBgQDxBlb9aLpH5P1T/kdd\nlTfiHBmy3YEF2iirSCG4DeFGJCjGzKtQbXuYaVvGVD60Nerdb12uk2grd272uVPs\n93//y7OrZpeBSjxZOXgyxWEjvN9iqBexpu0OLUJPOLae6z7T8vcTvs02fMOiFISj\nUS2hiyRD12aY9BYyvkuR3O7vwwKBgQC7Kjzp2iEDQjxr+evQxbKpuHWrSeHEMCGy\nviMr1OMbCiby/jb5n7v0NJtr5uoBdf+5AGPwfmndHJYacj8mjRpBPW+7IqrBOCtU\n2s7ILO8eH4iF1XmODXGuqfg/XtnLxC4n+vMAu7dT1xNBW/rpm6F5gJhfXRQAxZpQ\nCMc2b+zRNwKBgQDIa10qm0tLPT7p+SeeydYOTw+PjGEdXKs0wmZHhkMs8CR4KvjJ\niECeG/4UjTkW4T7Loy9jW2/jtQywXKtNAQGO0vQ0MrsI55IHH6KzlS2RahzXDK+n\nKgc1Iq1g8ufoffVgiUirQp2iEV0cCbPBml83VVxyjUrjJRTQXSy5vd1xwQKBgFtI\nN1sqWm13cXaL9nnk4cUqxKDcsLJ5cwX0+7xV4MmAQwzB9Vf7krSAr8iJX1mFDkpR\nKWzSipkfZwnQ7IHF0ac96m9Pcg44cdG5wZ4ZZCnB4Vi8i8M/RVGVbhCiFwDtVkGD\nf968rqXCQI7g6Ffk4nUaxbXE9IuH1EHydg5TuiEzAoGAILFEdJTqHRc8vTB3Pg1l\nP8z0zoP9rHKjBtKczMgyKnWEUFJ26uXHSWa7D0f0ldlYYYMm20SWOSMPcfuB16vk\nk6GB0FDoV31BphDPAn64RoBfFAid8JwZ63D8kM3jUMvxonIYTyiyKslMMmpnr/qJ\nuwKZtZBWxMfpIhVCljDwchg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "action2@artbridge.iam.gserviceaccount.com",
+  "client_id": "115676830917368238943",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/action2%40artbridge.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
